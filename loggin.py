@@ -1,9 +1,17 @@
 #CRITICAL 50
 #ERROR 40
 #WARNING 30
-#DEBUG 20
-#INFO 10
+#INFO 20
+#DEBUG 10
 #NONSET 0
+
+import logging
+
+logging.basicConfig(
+level=logging.DEBUG,
+format= '{asctime} {levelname} {message}',
+style='{'
+)
 
 logging.critical('This is a critical logging message')
 logging.error('This is an error logging message')
