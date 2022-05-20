@@ -1,6 +1,7 @@
 # Logging
 
 Getting familiar with Logging.
+
 First:
 	-import Logging library
 
