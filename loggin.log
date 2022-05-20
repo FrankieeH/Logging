@@ -1,0 +1,5 @@
+2022-05-19 18:07:05,056 CRITICAL 22 This is a critical logging message
+2022-05-19 18:07:05,056 ERROR 23 This is an error logging message
+2022-05-19 18:07:05,056 WARNING 24 This is an warning logging message
+2022-05-19 18:07:05,056 DEBUG 25 This is an debug logging message
+2022-05-19 18:07:05,056 INFO 26 This is an info logging message

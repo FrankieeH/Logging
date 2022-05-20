@@ -7,14 +7,20 @@
 
 import logging
 
+
 logging.basicConfig(
 level=logging.DEBUG,
-format= '{asctime} {levelname} {message}',
-style='{'
+format= '{asctime} {levelname} {lineno} {message}',
+style='{',
+filename= '%slog' % __file__[:-2],
+filemode= 'w'
 )
+loggy = logging.getLogger(__name__)
 
-logging.critical('This is a critical logging message')
-logging.error('This is an error logging message')
-logging.warning('This is an warning logging message')
-logging.debug('This is an debug logging message')
-logging.info('This is an info logging message')
+
+
+loggy.critical('This is a critical logging message')
+loggy.error('This is an error logging message')
+loggy.warning('This is an warning logging message')
+loggy.debug('This is an debug logging message')
+loggy.info('This is an info logging message')
